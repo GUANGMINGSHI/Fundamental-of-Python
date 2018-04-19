@@ -1,5 +1,3 @@
 #花見の準備について
 input_lines = input()
 print(6 * int(input_lines) ** 2)
-
-oko
