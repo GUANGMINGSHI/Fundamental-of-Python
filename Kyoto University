@@ -1,0 +1,23 @@
+＃第4回Pythonの概要：台形の面積を計算するソースコードを作成する
+up = float(input("What't the up?"))
+down = float(input("What's the down?"))
+high = float(input("What's the high?"))
+area = (up+down) * high / 2
+print(area)
+
+＃第5回制御文：
+1️⃣とある航空会社では年齢と体重から次の基準で運賃が決められる。
+age = int(input("What's your age?"))
+if age < 3:
+    print("Free")
+elif 3 < age < 12:
+    print("3000 yen")
+elif 12 < age < 60:
+    weight = int(input("What's your weight"))
+    if weight < 100:
+        print("10000 yen")
+    else:
+        print("20000 yen")
+else:
+    print("5000 yen")
+    
