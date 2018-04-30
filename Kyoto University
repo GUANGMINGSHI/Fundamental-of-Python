@@ -1,11 +1,12 @@
-＃第4回Pythonの概要：台形の面積を計算するソースコードを作成する
+＃第4回：Pythonの概要
+1️⃣台形の面積を計算するソースコードを作成する
 up = float(input("What't the up?"))
 down = float(input("What's the down?"))
 high = float(input("What's the high?"))
 area = (up+down) * high / 2
 print(area)
 
-＃第5回制御文：
+＃第5回：制御文
 1️⃣とある航空会社では年齢と体重から次の基準で運賃が決められる。
 age = int(input("How old are you?"))
 if age < 3:
@@ -21,3 +22,17 @@ elif 12 < age < 60:
 else:
     print("5000 yen")
     
+2️⃣1から9までの掛け算
+for n in range(1, 10):
+    for m in range(1, 10):
+        print(n * m)
+
+＃第6回：リストなどのデータ構造
+1️⃣リスト中から条件を満たすものの数を数える
+n = [90, 30, 20, 80, 20, 0, 20, 100, 60, 50]
+条件式を満たしている間、処理を続ける
+count = 0
+for i in n:
+    if i < 60:
+        count += 1
+print("Failed this exam:" + str(count))
