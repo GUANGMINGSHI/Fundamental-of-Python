@@ -46,10 +46,20 @@ print(city)
 
 2️⃣入力された値についての内包表記
 city1 = input("Where are you from?")
-city2 = city1.lower()
+city2 = city1.lower() ＃小文字
 city3 = city2.replace(" ", "")
-city_list = city3.split(",")
+city_list = city3.split(",") ＃カンマで分割したリストを作る
 
 city_t = [i.upper() for i in city_list if i.startswith("t")]
 print(city_t)
+
+#第9回：テキストファイル処理
+2️⃣ファイルの書き出し
+with open("iris.csv") as file: ＃With文を使う。
+    for line in file:
+        line2 = line.strip("¥n")
+        line3 = line2.split(",")
+        file.write(line3[-1] + "¥n") ＃改行コード
+        
+＃第10回：クラス 
 
