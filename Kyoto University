@@ -1,13 +1,5 @@
-＃第4回：Pythonの概要
-1️⃣台形の面積を計算するソースコードを作成する
-up = float(input("What't the up?"))
-down = float(input("What's the down?"))
-high = float(input("What's the high?"))
-area = (up+down) * high / 2
-print(area)
-
 ＃第5回：制御文
-1️⃣とある航空会社では年齢と体重から次の基準で運賃が決められる。
+1️⃣条件分岐と制御
 age = int(input("How old are you?"))
 if age < 3:
     print("Free")
@@ -22,7 +14,7 @@ elif 12 < age < 60:
 else:
     print("5000 yen")
     
-2️⃣1から9までの掛け算
+2️⃣ループの中にループ
 for n in range(1, 10):
     for m in range(1, 10):
         print(n * m)
@@ -36,3 +28,28 @@ for i in n:
     if i < 60:
         count += 1
 print("Failed this exam:" + str(count))
+
+#第7回：文字列、内包表記
+1️⃣入力されたものの数を辞書の中で数える
+city1 = input("Where are you from?")
+city2 = city1.lower()
+city3 = city2.replace(" ", "")
+city_list = city3.split(",")
+
+city = {}  #空の辞書を作成する
+for i in city_list:
+    if i in city:
+        city[i] += 1
+    else:
+        city[i] = 0
+print(city)
+
+2️⃣入力された値についての内包表記
+city1 = input("Where are you from?")
+city2 = city1.lower()
+city3 = city2.replace(" ", "")
+city_list = city3.split(",")
+
+city_t = [i.upper() for i in city_list if i.startswith("t")]
+print(city_t)
+
