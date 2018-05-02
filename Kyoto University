@@ -61,5 +61,6 @@ with open("iris.csv") as file: ＃With文を使う。
         line3 = line2.split(",")
         file.write(line3[-1] + "¥n") ＃改行コード
         
-＃第10回：クラス 
+#＃第10回：クラス 
+1️⃣クラスを作成する
 
