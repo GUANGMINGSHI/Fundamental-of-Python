@@ -63,4 +63,16 @@ with open("iris.csv") as file: ＃With文を使う。
         
 #＃第10回：クラス 
 1️⃣クラスを作成する
+import math
+
+class Triangle:
+    def __init__(self, bottom, height):
+        self.bottom = bottom
+        self.height = height
+    def calc_area(self):
+        calc_area = bottom * height / 2
+    def calc_edge(self):
+        calc_edge = math.sqrt(bottom ** 2 + height ** 2)
+print(3, 4)
+
 
