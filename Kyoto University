@@ -63,16 +63,25 @@ with open("iris.csv") as file: ＃With文を使う。
         
 #＃第10回：クラス 
 1️⃣クラスを作成する
-import math
+from math import sqrt
 
 class Triangle:
-    def __init__(self, bottom, height):
-        self.bottom = bottom
-        self.height = height
+    #これからはメソッド、関数の定義と同じ書く
+    def __init__(self, v1, v2):#メソッドを自動的に呼び出す
+        self.bottom = v1#インスタンス変数：クラスに基づいて実際に作成した物
+        self.height = v2
+
     def calc_area(self):
-        calc_area = bottom * height / 2
+        self.area = self.bottom * self.height / 2#引数に必ずSelfを加える
+
     def calc_edge(self):
-        calc_edge = math.sqrt(bottom ** 2 + height ** 2)
-print(3, 4)
+        self.edge = sqrt(self.bottom ** 2 + self.height ** 2)
+
+output = Triangle(2, 2)
+output.calc_area()
+output.calc_edge()
+#print(Triangle):クラス定義の外では変数の前にインスタンス名をつけてアクセスする
+
+#第11回：アルゴリズム
 
 
