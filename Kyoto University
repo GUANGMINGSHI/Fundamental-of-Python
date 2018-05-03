@@ -55,6 +55,9 @@ print(city_t)
 
 #第9回：テキストファイル処理
 2️⃣ファイルの書き出し
+with open("ok.txt", "w") as file:
+    file.write("This is not my zone!")
+    
 with open("/Users/jimmy/Desktop/Python/iris.csv") as file_in:
     with open("test.txt", "w") as file_out:
         for line in file_in:
