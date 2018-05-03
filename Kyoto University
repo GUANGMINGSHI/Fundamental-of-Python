@@ -32,7 +32,7 @@ print("Failed this exam:" + str(count))
 #第7回：文字列、内包表記
 1️⃣入力されたものの数を辞書の中で数える
 city1 = input("Where are you from?")
-city2 = city1.lower()
+city2 = city1.lower()  #代入する
 city3 = city2.replace(" ", "")
 city_list = city3.split(",")
 
@@ -82,8 +82,21 @@ output.calc_area()
 output.calc_edge()
 #print(Triangle):クラス定義の外では変数の前にインスタンス名をつけてアクセスする
 
-#第11回：アルゴリズム
-できるだけ省メモリ、省時間
+#第12回：復習
+1️⃣入力された自然数の公約数を全部列挙、素数かどうかを判断 
+n = int(input("Data?"))
+for i in range(1, n+1):#辞書でもない、リストでもないから、range()を使う。リストなら、括弧はいらん
+    if n % i == 0:
+        print(i)
+       
+n = int(input("Data?"))
+for i in range(1, n + 1):
+    if n % i == 0:
+        if i != 1 and i != n: #数学の考え方
+            print("bushisushu")
+            break;#ループの中断
+
+
 
 
 
