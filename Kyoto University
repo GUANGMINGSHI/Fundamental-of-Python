@@ -86,7 +86,7 @@ output.calc_area()
 output.calc_edge()
 #print(Triangle):クラス定義の外では変数の前にインスタンス名をつけてアクセスする
 
-#第12回：復習
+#第12回：It's difficult.
 1️⃣入力された自然数の公約数を全部列挙、素数かどうかを判断 
 n = int(input("Data?"))
 for i in range(1, n+1):#辞書でもない、リストでもないから、range()を使う。リストなら、括弧はいらん
@@ -122,7 +122,17 @@ while True:#True表示一直循环直到满足break的条件
     else:
         print("This is right!")
         break
-
+4️⃣会議の日程調整
+＃第13回：例外処理、複雑な反復処理、関数の応用
+for i in range(5):
+    value = int(input("Zhengshu?"))
+    try:
+        print(100 / value)
+    except:
+        print("Over")
+        break
+else:
+    print("This loop is over!")
 
 
 
