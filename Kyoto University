@@ -135,7 +135,7 @@ else:
     print("This loop is over!")
 
 ＃第14回：応用編
-plt.show()：used in Pycharm
+plt.show()：used in Pycharm for visualization
 
 
 
