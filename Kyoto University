@@ -134,6 +134,8 @@ for i in range(5):
 else:
     print("This loop is over!")
 
+＃第14回：応用編
+plt.show()：used in Pycharm
 
 
 
