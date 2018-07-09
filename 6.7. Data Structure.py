@@ -63,5 +63,21 @@ print(flight_set)
 
 
 """String"""
+# Can do same operations as list
+# also can use for loop
+
+#create a string
+message = "hello!"
+
+# replease
+print(message.replace("hello", "Hi"))
+# convert string to list by "split"
+message_list = message.split("!")
+print(message_list)
+# count the numbers
+print(message.count("hello!"))
+# if contains hello or not
+print("hello" in message)
+
 
 
