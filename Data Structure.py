@@ -1,3 +1,8 @@
+# data type
+値の型整数型(int), 浮動小数点型(float), 文字列型(str)
+
+# データ構造
+リスト、タプル、集合、辞書
 
 ## list
 city = ["Tokyo", "Kyoto", "Saporo", "Naha", "Sendai", "Hakata", "Nagoya"]
