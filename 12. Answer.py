@@ -38,18 +38,20 @@ print(str(count))
 
 #第7回：文字列、内包表記
 1. 入力されたものの数を辞書の中で数える
-city1 = input("Where are you from?")
-city2 = city1.lower()  #代入する
-city3 = city2.replace(" ", "")
-city_list = city3.split(",")
+city = input("Where are you from?")
+print(city.lower())
+print(city.replace(" ",""))
+city_list = city.split(",")
+print(city_list)
 
-city = {}  #空の辞書を作成する
+# why create empty dictionary?
+dict = {}
 for i in city_list:
-    if i in city:
-        city[i] += 1
+    if i in dict:
+        dict[i] += 1
     else:
-        city[i] = 0
-print(city)
+        dict[i] = 1
+print(dict)
 
 2. 入力された値についての内包表記
 city1 = input("Where are you from?")
