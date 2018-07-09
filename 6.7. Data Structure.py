@@ -2,8 +2,7 @@
 値の型整数型(int), 浮動小数点型(float), 文字列型(str)
 
 # データ構造
-リスト、タプル、集合、辞書
-
+リスト、文字列、タプル、集合、辞書
 
 """list"""
 city = ["Tokyo", "Kyoto", "Saporo", "Naha", "Sendai", "Hakata", "Nagoya"]
@@ -61,5 +60,8 @@ flight_list = list(flight.values())
 #convert list to set
 flight_set = set(flight_list)
 print(flight_set)
+
+
+"""String"""
 
 
