@@ -4,7 +4,8 @@
 # データ構造
 リスト、タプル、集合、辞書
 
-## list
+
+"""list"""
 city = ["Tokyo", "Kyoto", "Saporo", "Naha", "Sendai", "Hakata", "Nagoya"]
 # show third one
 print(city[2])
@@ -26,3 +27,22 @@ city.remove("Tokyo")
 # Align this list
 align = sorted(city)
 print(align)
+
+
+"""Tuple: a list cannot change element."Immutable": same as list"""
+# create tuple use "()" rather than "[]"
+grade_tuple = (10,20,30)
+# convert tuple to list.
+grade_list = list(grade_tuple)
+
+
+"""Set: a list have no same value"""
+# create a set use "{}"
+rank = {"A", "B"}
+# also can convert from list
+
+
+"""Dictionary: a list designate by "key" rather than "Index""""
+# create a dictionary
+joho_score = {"E0123":60, "T2468":90, "M8901":45}
+print(joho_score["E0123"])
