@@ -80,4 +80,23 @@ print(message.count("hello!"))
 print("hello" in message)
 
 
+"""list comprehension: [...for ... in ... if...], can create list efficiently."""
+# example: create a list
+num_square = []
+for num in [1,2,3,4,5]:
+    num_square.append(num ** 2)
+print(num_square)
+
+num_square = [num ** 2 for num in [1,2,3,4,5]]
+print(num_square)
+
+# create string use [], set use {}, dictionary use {}
+#create dictionary from two list by function zip
+day_num = [1, 2, 3, 4, 5, 6, 7]
+day_en = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+days = {num:en for (num,en) in zip(day_num,day_en)}
+print(days)
+
+
 
