@@ -22,13 +22,19 @@ for n in range(1, 10):
 
 ＃第6回：リストなどのデータ構造
 1. リスト中から条件を満たすものの数を数える
-n = [90, 30, 20, 80, 20, 0, 20, 100, 60, 50]
-条件式を満たしている間、処理を続ける
+score = [90, 30, 20, 80, 20, 0, 20, 100, 60, 50]
+sum = sum(score)
+len = len(score)
+average = sum / len
+print(average)
+
 count = 0
-for i in n:
+for i in score:
     if i < 60:
         count += 1
-print("Failed this exam:" + str(count))
+
+print(str(count))
+
 
 #第7回：文字列、内包表記
 1. 入力されたものの数を辞書の中で数える
