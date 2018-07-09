@@ -46,3 +46,20 @@ rank = {"A", "B"}
 # create a dictionary
 joho_score = {"E0123":60, "T2468":90, "M8901":45}
 print(joho_score["E0123"])
+
+
+"""homework"""
+# create a dictionary
+flight = {"JL813":"TAIBEI", "CX567":"HONGKONG", "KE722":"SEOUL",
+          "MU730":"SHANGHAI", "NH873":"HONGKONG", "MM23":"TAIBEI",
+          "SQ619":"SINGAPORE", "BR131":"TAIBEI"}
+
+print(flight["CX567"])
+
+#convert dictionary to list
+flight_list = list(flight.values())
+#convert list to set
+flight_set = set(flight_list)
+print(flight_set)
+
+
