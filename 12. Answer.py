@@ -54,12 +54,13 @@ for i in city_list:
 print(dict)
 
 2. 入力された値についての内包表記
-city1 = input("Where are you from?")
-city2 = city1.lower() ＃小文字
-city3 = city2.replace(" ", "")
-city_list = city3.split(",") ＃カンマで分割したリストを作る
+city = input("Where are you from?")
+city_lower = city.lower()
+city_rep = city_lower.replace(" ","")
+city_list = city_rep.split(",")
 
-city_t = [i.upper() for i in city_list if i.startswith("t")]
+# Pay attention "i".
+city_t = [ i.upper() for i in city_list if i.startswith("t")]
 print(city_t)
 
 #第9回：テキストファイル処理
