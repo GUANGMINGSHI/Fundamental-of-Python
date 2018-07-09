@@ -1,18 +1,19 @@
 ＃第5回：制御文
 1. 条件分岐と制御
-age = int(input("How old are you?"))
+age = int(input("your age?"))
 if age < 3:
-    print("Free")
+    print("free")
 elif 3 < age < 12:
-    print("3000 yen")
-elif 12 < age < 60:
-    weight = int(input("What's your weight"))
+    print("3000")
+elif 65 > age > 12:
+    weight = int(input("your weight?(kg)"))
     if weight < 100:
-        print("10000 yen")
+        print("10000")
     else:
-        print("20000 yen")
+        print("20000")
 else:
-    print("5000 yen")
+    print("5000")
+ 
     
 2. ループの中にループ
 for n in range(1, 10):
