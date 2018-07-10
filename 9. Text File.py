@@ -55,8 +55,9 @@ with open("/Users/jimmy/Desktop/Python/iris.csv") as file_in:
             line2 = line.strip("¥n")
             line_data = line2.split(",")
             file_out.write(line_data[-1] + "¥n")
-            
-# what's this?
+     
+   
+""" use module:csv"""
 import csv
 with open("/Users/jimmy/Desktop/VAAK/Camera01.csv", "r") as csvfile:
     reader = csv.reader(csvfile)
