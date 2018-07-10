@@ -15,7 +15,13 @@ lines = file.readlines()
 print(lines)
 file.close
 
-# 書き出しでファイルを開く only "string"
+# use "with...open...as"
+with open("/Users/jimmy/Desktop/Python/iris.csv") as file:
+    for line in file:
+        line2 = line.strip("¥n")
+        print(line2)
+
+# 書き出しでファイルを開く, only "string"
 with open("/Users/jimmy/Desktop/Python/test.txt", "w") as file:
     file.write("information process")
     file.write("is teaching Python.")
@@ -34,11 +40,6 @@ for line in file:
     print(line2)
 file.close()
 
-# use "with...open...as"
-with open("/Users/jimmy/Desktop/Python/iris.csv") as file:
-    for line in file:
-        line2 = line.strip("¥n")
-        print(line2)
 # show the csv file last one rows
 with open("/Users/jimmy/Desktop/Python/iris.csv") as file:
     for line in file:
