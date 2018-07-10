@@ -58,11 +58,23 @@ with open("/Users/jimmy/Desktop/Python/iris.csv") as file_in:
      
    
 """ use module:csv"""
+# read csv file
 import csv
 with open("/Users/jimmy/Desktop/VAAK/Camera01.csv", "r") as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         print(row)
-
+# write csv file
+word = "Good morning, Hello, Good night"
+words = word.split(',') 
+with open("/Users/jimmy/Desktop/start.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(words)
+    
+# read dictionary use csv.DictReader()
+with open('dict.csv', 'r') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row)
     
 
