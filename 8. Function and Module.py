@@ -1,6 +1,5 @@
-## define function(1-one argument)
+## define an input function(1-one argument)
 def s(message):
-    # don't know this means
     value = int(input(message))
     if value < 0:
         print("you are wrong.")
@@ -9,6 +8,7 @@ def s(message):
 bottom = s("bottom")
 high = s("high")
 print(bottom * high / 2)
+
 
 ## define function(2-many argument)
 def s(bottom, high):
