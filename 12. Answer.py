@@ -76,25 +76,20 @@ with open("/Users/jimmy/Desktop/Python/iris.csv") as file_in:
             file_out.write(line3[-1])
         
 #＃第10回：クラス 
-1. クラスを作成する
 from math import sqrt
-
 class Triangle:
-    #これからはメソッド、関数の定義と同じ書く
-    def __init__(self, v1, v2):#メソッドを自動的に呼び出す
-        self.bottom = v1#selfはインスタンス変数：クラスに基づいて実際に作成した物
-        self.height = v2
-
+    def __init__(self, bottom, height):
+        self.bottom = bottom
+        self.height = height
     def calc_area(self):
-        self.area = self.bottom * self.height / 2#引数に必ずSelfを加える
-
+        return self.bottom * self.height / 2
+        
     def calc_edge(self):
-        self.edge = sqrt(self.bottom ** 2 + self.height ** 2)
+        return sqrt(self.bottom ** 2 + self.height ** 2)
 
-output = Triangle(2, 2)
-output.calc_area()
-output.calc_edge()
-#print(Triangle):クラス定義の外では変数の前にインスタンス名をつけてアクセスする
+triangle1 = Triangle(3, 4)
+print(triangle1.calc_area())
+
 
 #第12回：It's difficult.
 1. 入力された自然数の公約数を全部列挙、素数かどうかを判断 
