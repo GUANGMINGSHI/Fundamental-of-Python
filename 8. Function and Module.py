@@ -1,10 +1,8 @@
 ## define an input function(1-one argument)
 def s(message):
-    value = int(input(message))
-    if value < 0:
-        print("you are wrong.")
+    value = int(input(message)）
     return value
-# use function you defined, no need input()
+# use function you defined
 bottom = s("bottom")
 high = s("high")
 print(bottom * high / 2)
@@ -17,3 +15,9 @@ def s(bottom, high):
 # use function you defined, no need input()
 s = s(3, 4)
 print(s)
+                
+     
+# Function map(),
+                
+
+
