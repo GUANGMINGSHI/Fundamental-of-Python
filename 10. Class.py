@@ -24,14 +24,13 @@ class Dog:
   def speak(self, sound):
     return "{} says {}".format(self.name, sound)
     
-# Create instance: class.(argument)
-# クラスに基づいて実際に作成した個々のものをオブジェクトやインスタンスという.
+# オブジェクトやインスタンス: クラスに基づいて実際に作成した個々のもの
 # Every object is an instance of a class. For Example: Kevin is human.
-# For example: two Triangle class (h = 1, b = 1) or (h = 2, b = 2).
+# Create instance: class.(argument)
 philo = Dog("Philo", 5)
 mikey = Dog("Mikey", 6)
 
-# call instance method: instance.class()
+# call instance method: instance.method()
 print(philo.description())
 print(mikey.speak("Gruff Gruff"))
 
