@@ -12,7 +12,7 @@ class Dog:
   species = 'mammal'
   
   # Constractor: which function's name same as class name. class 内の"__init__"を自動的に呼び出す. 
-  # "__init__"can initialization instance.
+  # method of initialization instance 
   def __init__(self, name, age):
     self.name = name
     self.age = age
@@ -24,9 +24,9 @@ class Dog:
   def speak(self, sound):
     return "{} says {}".format(self.name, sound)
     
-# オブジェクトやインスタンス: クラスに基づいて実際に作成した個々のもの
+# オブジェクトやインスタンス: クラスに基づいて実際に作成した個々のもの, so class.(argument)
 # Every object is an instance of a class. For Example: Kevin is human.
-# Create instance: class.(argument)
+# Create instance "philo" and "mikey"
 philo = Dog("Philo", 5)
 mikey = Dog("Mikey", 6)
 
