@@ -1,4 +1,4 @@
-"""control statement"""
+"""simple control statement"""
 # specify data individually
 for num in [1,2,3,4,5]:
     print(num)
@@ -33,4 +33,44 @@ while remain > 0:
     print(100 /value)
     remain -= 1
 
+    
+"""complitate control statement"""
+# output index and value from a list
+city = ["Tokyo", "Beijing", "Hongkong", "Shenzhen"]
+for i, c in enumerate(city):
+    print("{}: {}".format(i, city[i]))
+
+# output from multiple list, use function zip()
+city = ["Tokyo", "Beijing", "Shanghai", "hangzhou"]
+code = [0, 1, 2, 3]
+
+for i,j in zip(city, code):
+    print("{}({})".format(i,j))
+    
+# excetions
+try:
+    # run this code
+    linux_interaction()
+except AssertionError as error:
+    # run this code when there is exception
+    print(error)
+else:
+    # no exceptions? run this code
+    try:
+        with open('file.log') as file:
+            read_data = file.read()
+    except FileNotFoundError as fnf_error:
+        print(fnf_error)
+finally:
+    # always run this code
+    print('clean up')
+
+
+
+
+
+
+
+
+    
     
