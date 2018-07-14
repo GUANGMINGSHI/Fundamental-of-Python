@@ -1,6 +1,11 @@
 # 配列：データを一列に並べた変数
+# becasue float no iterable, so transform to list.
+myresults = []
 for i in range(len(cols_x)-1):
     distance = math.sqrt((cols_x[i+1] - cols_x[i]) ** 2 + (cols_y[i+1]-cols_y[i]) ** 2)
+    print(distance)
+    myresults.append(distance)
+print(sum(myresults))
 
 # data type
 値の型整数型(int), 浮動小数点型(float), 文字列型(str)
