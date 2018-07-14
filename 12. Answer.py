@@ -1,31 +1,3 @@
-#第9回：テキストファイル処理
-2. ファイルの書き出し
-with open("ok.txt", "w") as file:
-    file.write("This is not my zone!")
-    
-with open("/Users/jimmy/Desktop/Python/iris.csv") as file_in:
-    with open("test.txt", "w") as file_out:
-        for line in file_in:
-            line2 = line.strip("¥n")
-            line3 = line2.split(",")
-            file_out.write(line3[-1])
-        
-#＃第10回：クラス 
-from math import sqrt
-class Triangle:
-    def __init__(self, bottom, height):
-        self.bottom = bottom
-        self.height = height
-    def calc_area(self):
-        return self.bottom * self.height / 2
-        
-    def calc_edge(self):
-        return sqrt(self.bottom ** 2 + self.height ** 2)
-
-triangle1 = Triangle(3, 4)
-print(triangle1.calc_area())
-
-
 #第12回：It's difficult.
 1. 入力された自然数の公約数を全部列挙、素数かどうかを判断 
 n = int(input("Data?"))
