@@ -1,5 +1,5 @@
 #第12回：It's difficult.
-1. 入力された自然数の公約数を全部列挙、素数かどうかを判断 
+'''入力された自然数の公約数を全部列挙、素数かどうかを判断''' 
 n = int(input("Data?"))
 for i in range(1, n+1):#辞書でもない、リストでもないから、range()を使う。リストなら、括弧はいらん
     if n % i == 0:
@@ -11,7 +11,8 @@ for i in range(1, n + 1):
         if i != 1 and i != n: #数学の考え方
             print("bushisushu")
             break;#ループの中断
-2. ユークリッド互除法
+
+'''ユークリッド互除法'''
 a = int(input("a?"))
 b = int(input("b?"))
 r = a%b
@@ -21,7 +22,8 @@ while r:
     r = a % b
 print(b)
 
-3. 数当てゲーム
+
+'''数当てゲーム'''
 import random
 r = random.randrange(100)
 
@@ -34,7 +36,8 @@ while True:#True表示一直循环直到满足break的条件
     else:
         print("This is right!")
         break
-4. 会議の日程調整
+
+'''会議の日程調整'''
 ＃第13回：例外処理、複雑な反復処理、関数の応用
 for i in range(5):
     value = int(input("Zhengshu?"))
@@ -45,6 +48,3 @@ for i in range(5):
         break
 else:
     print("This loop is over!")
-
-＃第14回：応用編
-plt.show()：used in Pycharm for visualization
