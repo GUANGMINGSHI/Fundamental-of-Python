@@ -1,30 +1,3 @@
-#第7回：文字列、内包表記
-1. 入力されたものの数を辞書の中で数える
-city = input("Where are you from?")
-print(city.lower())
-print(city.replace(" ",""))
-city_list = city.split(",")
-print(city_list)
-
-# why create empty dictionary?
-dict = {}
-for i in city_list:
-    if i in dict:
-        dict[i] += 1
-    else:
-        dict[i] = 1
-print(dict)
-
-2. 入力された値についての内包表記
-city = input("Where are you from?")
-city_lower = city.lower()
-city_rep = city_lower.replace(" ","")
-city_list = city_rep.split(",")
-
-# Pay attention "i".
-city_t = [ i.upper() for i in city_list if i.startswith("t")]
-print(city_t)
-
 #第9回：テキストファイル処理
 2. ファイルの書き出し
 with open("ok.txt", "w") as file:
