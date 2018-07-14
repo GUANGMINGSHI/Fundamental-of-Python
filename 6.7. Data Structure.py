@@ -103,6 +103,9 @@ print(days)
 
 # becasue float no iterable, so transform to list.
 myresults = []
+## range(start, stop) = start, stop-1
+## range(1, 3) = [1, 2]
+## if hace no "len(cols_x) - 1", output will divergence.
 for i in range(len(cols_x)-1):
     distance = math.sqrt((cols_x[i+1] - cols_x[i]) ** 2 + (cols_y[i+1]-cols_y[i]) ** 2)
     print(distance)
@@ -121,8 +124,7 @@ city = input("Where are you from?")
 city_lower = city.lower()
 city_rep = city_lower.replace(" ","")
 city_list = city_rep.split(",")
-
-# i.
+# have miss in i
 city_t = [ i.upper() for i in city_list if i.startswith("t")]
 print(city_t)
 
