@@ -70,6 +70,3 @@ p1.robot_owned = r2
 
 p1.robot_owned.introduce_self()
 
-
-
-
