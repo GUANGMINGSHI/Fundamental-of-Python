@@ -71,15 +71,26 @@ print(flight_set)
 #create a string
 message = "hello!"
 
-# replease
-print(message.replace("hello", "Hi"))
-# convert string to list by "split"
-message_list = message.split("!")
-print(message_list)
 # count the numbers
 print(message.count("hello!"))
 # if contains hello or not
 print("hello" in message)
+
+# count up using a dictionary
+city = input("Where are you from?")
+city = city.lower()
+city = city.replace(" ","")
+city_list = city.split(",")
+# create a dictionary
+city_dic = {"dongjing":4}
+for i in city_list:
+    # if city's key exist, then plus 1
+    if i in city_dic:
+        # designation that key's value
+        city_dic[i] += 1
+    else:
+        city_dic[i] = 0
+print(city_dic)
 
 
 """list comprehension: [...for ... in ... if...], can create list efficiently."""
