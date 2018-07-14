@@ -116,5 +116,13 @@ for i in score:
     if i < 60:
         count += 1
 
+# 入力された値についての内包表記
+city = input("Where are you from?")
+city_lower = city.lower()
+city_rep = city_lower.replace(" ","")
+city_list = city_rep.split(",")
 
+# i.
+city_t = [ i.upper() for i in city_list if i.startswith("t")]
+print(city_t)
 
