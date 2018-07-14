@@ -1,6 +1,7 @@
 #第12回：It's difficult.
 '''入力された自然数の公約数を全部列挙、素数かどうかを判断''' 
 n = int(input("Data?"))
+# int not iterable. so n---range(1, n+1)
 for i in range(1, n+1):#辞書でもない、リストでもないから、range()を使う。リストなら、括弧はいらん
     if n % i == 0:
         print(i)
