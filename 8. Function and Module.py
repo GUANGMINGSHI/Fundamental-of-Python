@@ -1,4 +1,4 @@
-'''define an input function(1-one argument)'''
+'''define an input function(one argument)'''
 def s(message):
     value = int(input(message)）
     return value
@@ -8,7 +8,7 @@ high = s("high")
 print(bottom * high / 2)
 
 
-'''define function(2-many argument)'''
+'''define function(many argument)'''
 def s(bottom, high):
     area = bottom * high / 2
     return area
@@ -36,14 +36,21 @@ def prime_number(num):
             return False
     return True
 
-num_list = [2, 100]
+num_list = range(2, 100)
 
+'''
 # normal solution                
 prime_list = []                                 
-for                  
+for n in num_list:
+    if prime_number(n) == True:
+        prime_list.append(n)
+    
+print(prime_list) 
+'''
+
                 
-                
-      
-                
+# filter function, included in for loop.                      
+for p in filter(prime_number, num_list):
+    print(p)              
 
 
