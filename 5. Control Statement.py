@@ -7,12 +7,26 @@ for num in range(10):
     print("num=" + str(num))
     print("num*num=" + str(num*num))
 
-'''while: run n times until a defined condition is no longer met'''
+'''while: iterate as long as condition is true '''
 count = 5
 while count > 0:
     print(str(count))
     count -= 1
+    
+#数当てゲーム
+import random
+r = random.randrange(100)
 
+while True:
+    x = int(input("number?"))
+    if x < r:
+        print("smaller")
+    elif x > r:
+        print("bigger")
+    else:
+        print("right")
+
+        
 '''"break;": break the loop'''
 while True:
     value = int(input("yen"))
@@ -21,6 +35,7 @@ while True:
         break;
     print(100 / value)
 
+    
 '''"continue": continue this loop'''
 remain = 5
 while remain > 0:
@@ -80,6 +95,7 @@ for i in range(5):
         break
 print("over")
 
+
 '''judge inputted number is prime number or not?''' 
 n = int(input("Data?"))
 for i in range(1, n + 1):
@@ -88,11 +104,3 @@ for i in range(1, n + 1):
             print("bushisushu")
             # why break?
             break;
-
-
-
-
-
-
-    
-    
