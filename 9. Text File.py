@@ -4,7 +4,6 @@ file operation take place three steps:
 2. read or write the file
 3. close the file
 """
-
 # 書き出しでファイルを開く, only "string"
 with open("/Users/jimmy/Desktop/Python/test.txt", "w") as file:
     file.write("information process")
@@ -32,23 +31,27 @@ with open("/Users/jimmy/Desktop/Python/iris.csv") as file_in:
             file_out.write(line_data[-1])
      
    
-""" use module:csv"""
+""" csv module - csv file reading and writing. """
 # read csv file
 import csv
 with open("/Users/jimmy/Desktop/VAAK/Camera01.csv", "r") as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         print(row)
+        
 # write csv file
 word = "Good morning, Hello, Good night"
 words = word.split(',') 
 with open("/Users/jimmy/Desktop/start.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(words)
-    
+
 # read dictionary use csv.DictReader()
 with open('dict.csv', 'r') as f:
     reader = csv.DictReader(f)
     for row in reader:
         print(row)
-   
+
+        
+"""using pandas to operate csv data"""
+camera_csv = pd.read_csv(filepath_or_buffer="/Users/jimmy/Desktop/VAAK/Camera01.csv", encoding="ms932", sep=",")
