@@ -80,7 +80,14 @@ for i in range(5):
         break
 print("over")
 
-
+'''judge inputted number is prime number or not?''' 
+n = int(input("Data?"))
+for i in range(1, n + 1):
+    if n % i == 0:
+        if i != 1 and i != n:
+            print("bushisushu")
+            # why break?
+            break;
 
 
 
