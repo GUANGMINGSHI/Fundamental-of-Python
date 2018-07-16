@@ -2,6 +2,9 @@
 
 # data type
 値の型整数型(int), 浮動小数点型(float), 文字列型(str)
+# float can not be implicitedly converted to be string.
+print("Median height of goalkeepers: " + str(np.median(gk_heights)))
+print("Median height of goalkeepers: {0}".format(np.median(gk_heights)))
 
 # データ構造
 リスト、文字列、タプル、集合、辞書
