@@ -13,14 +13,15 @@ class Dog:
   species = 'mammal'
   
   # Constractor: which function's name same as class name. class 内の"__init__"を自動的に呼び出す. 
-  # method of initialization instance 
-  def __init__(self, name, age):# why use (self, name age)?
+  # a method of initialization instance 
+  def __init__(self, name, age):# self: reference to the class itself.
+    # selfでアクセス
     self.name = name
     self.age = age
     
   # Instance method: used to get the contents of an instance.
   # create same as function; add "self" before argument.
-  def description(self):# why only self?
+  def description(self):
     # use return or print()
     return "{} is {} years old".format(self.name, self.age)
   def speak(self, sound):
