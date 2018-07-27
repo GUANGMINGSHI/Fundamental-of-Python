@@ -42,6 +42,7 @@ vip = []
 
 with open("/Users/jimmy/Desktop/Python/days.csv") as file_in:
     for line in file_in:
+        # 指定した末尾のものを除去する; strip: 指定した最初と末尾のものを除去する.
         x = line.rstrip('\n')
         days_list = x.split(",")
         
@@ -78,7 +79,11 @@ word = "Good morning, Hello, Good night"
 words = word.split(',') 
 with open("/Users/jimmy/Desktop/start.csv", "w") as f:
     writer = csv.writer(f)
+    # writer.writerow() must be iterable string or numbers for writer object.
+    # writer.writerow([person_x,person_y])
+    # writer.writerows() expected list of lists, not list of string. you can split string to columns.
     writer.writerow(words)
+    
 
 # read dictionary use csv.DictReader()
 with open('dict.csv', 'r') as f:
