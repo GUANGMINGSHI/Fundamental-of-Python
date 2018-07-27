@@ -26,6 +26,7 @@ with open("/Users/jimmy/Desktop/Python/iris.csv") as file:
 # Question2: write in another file, rather than show it.
 with open("/Users/jimmy/Desktop/Python/iris.csv") as file_in:
     with open("/Users/jimmy/Desktop/Python/iriss.csv", "w") as file_out:
+        # difference between "w" and "a"; don't foget "w".
         for line in file_in:
             line_data = line.split(",")
             file_out.write(line_data[-1])
