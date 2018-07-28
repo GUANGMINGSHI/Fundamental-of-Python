@@ -7,7 +7,19 @@ For exampel: student class (name, birthday, course), teacher class(name, birthda
              Triangle class (bottom, height, area, edge; calc_area, calc_edge) 
 '''
 
-"""define a class"""
+
+'''define a simple class'''
+class Dog:
+  pass
+# create instance of class
+Dog()
+Dog()
+
+a = Dog()
+b = Dog()
+
+
+"""define a more complex class"""
 class Dog:
   # class attribute
   species = 'mammal'
