@@ -1,21 +1,9 @@
-'''define an input function(one argument)'''
-def s(message):
-    value = int(input(message)）
-    return value
-# use function you defined
-bottom = s("bottom")
-high = s("high")
-print(bottom * high / 2)
-
-
-'''define function(many argument)'''
+'''define function(2 arguments)'''
 def s(bottom, high):
+#     you can docstring in here
     area = bottom * high / 2
-    return area
-# use function you defined, no need input()
-s = s(3, 4)
-print(s)
-                
+#     return [expression list]
+    return area      
 
 '''map(function, iterable): apply a function to a list and get a new list.'''
 eur_jpy = 122.75
