@@ -1,12 +1,3 @@
-'''specify data individually'''
-for num in [1,2,3,4,5]:
-    print(num)
-
-'''specify data's range'''
-for num in range(10):
-    print("num=" + str(num))
-    print("num*num=" + str(num*num))
-
 '''while: iterate as long as condition is true '''
 count = 5
 while count > 0:
@@ -27,7 +18,7 @@ while True:
         print("right")
 
         
-'''"break;": break the loop'''
+'''break: break the loop'''
 while True:
     value = int(input("yen"))
     if value == 0:
@@ -36,7 +27,7 @@ while True:
     print(100 / value)
 
     
-'''"continue": continue this loop when if statement occur.'''
+'''continue: continue this loop when if statement occur.'''
 remain = 5
 while remain > 0:
     print(str(remain))
