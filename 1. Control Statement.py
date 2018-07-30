@@ -36,7 +36,7 @@ while True:
     print(100 / value)
 
     
-'''"continue": continue this loop'''
+'''"continue": continue this loop when if statement occur.'''
 remain = 5
 while remain > 0:
     print(str(remain))
