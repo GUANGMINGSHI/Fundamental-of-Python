@@ -8,6 +8,7 @@ while count > 0:
 import random
 r = random.randrange(100)
 
+#iterate until draw your results. 
 while True:
     x = int(input("number?"))
     if x < r:
