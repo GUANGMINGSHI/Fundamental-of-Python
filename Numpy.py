@@ -36,7 +36,7 @@ gk_heights = np_heights[np_positions == "GK"]
 # 忘年会の予算
 import numpy as np
 x,y = input().split()
-# dtypeを指定する必要がある? Why?
+# dtypeを指定しないと, the type will be determined as the minimum type required to hode the objects in the sequence.
 np_x = np.array(x, dtype='int')
 np_y = np.array(y, dtype='int')
 print(np_x * 6000 + np_y * 4000)
