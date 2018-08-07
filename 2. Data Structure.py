@@ -7,7 +7,7 @@ print("Median height of goalkeepers: " + str(np.median(gk_heights)))
 print("Median height of goalkeepers: {0}".format(np.median(gk_heights)))
 
 # データ構造
-リスト、文字列、タプル、集合、辞書
+リスト、タプル、集合、辞書
 
 """list"""
 city = ["Tokyo", "Kyoto", "Saporo", "Naha", "Sendai", "Hakata", "Nagoya"]
