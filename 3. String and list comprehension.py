@@ -9,6 +9,8 @@ message = "hello!"
 print(message.count("hello!"))
 # if contains hello or not
 print("hello" in message)
+# string slice
+print(message[::-1])
 
 # count up using a dictionary
 city = input("Where are you from?")
