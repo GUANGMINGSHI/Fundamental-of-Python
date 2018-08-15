@@ -40,23 +40,21 @@ while remain > 0:
     remain -= 1
 
     
-'''excetions'''
-try:
-    # run this code
-    linux_interaction()
-except AssertionError as error:
-    # run this code when there is exception
-    print(error)
-else:
-    # no exceptions? run this code
-    try:
-        with open('file.log') as file:
-            read_data = file.read()
-    except FileNotFoundError as fnf_error:
-        print(fnf_error)
-finally:
-    # always run this code
-    print('clean up')
+
+'''
+例外処理:
+     try:                     
+         通常処理                    
+     except:
+         例外ときの処理
+       
+       
+例外処理は指定することができる： 
+     try:
+         通常処理
+     except ValueError:
+         例外ときの処理
+'''
     
 # Example:    
 for i in range(5):
@@ -68,6 +66,7 @@ for i in range(5):
         break
     except ZeroDivisionError:
         print("not 0")
+        ＃　close this whole loop.
         break
 print("over")
 
@@ -78,7 +77,6 @@ for i in range(1, n + 1):
     if n % i == 0:
         if i != 1 and i != n:
             print("bushisushu")
-            # why break?
             break;
 
 # 最大公約数を求める。ユークリッド互除法
