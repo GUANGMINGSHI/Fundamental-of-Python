@@ -40,22 +40,6 @@ while remain > 0:
     remain -= 1
 
     
-'''output index and value from a list'''
-city = ["Tokyo", "Beijing", "Hongkong", "Shenzhen"]
-for i, c in enumerate(city):
-    # string.format() function
-    print("{}: {}".format(i, city[i]))
-
-    
-'''output from multiple list, use function zip()'''
-city = ["Tokyo", "Beijing", "Shanghai", "hangzhou"]
-code = [0, 1, 2, 3]
-
-for i,j in zip(city, code):
-    # because in loop, so (i, j) not (city, code)
-    print("{}({})".format(i,j))
-    
-    
 '''excetions'''
 try:
     # run this code
