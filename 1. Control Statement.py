@@ -57,18 +57,14 @@ while remain > 0:
 '''
     
 # Example:    
-for i in range(5):
-    value = int(input("integer?"))
+for i in range(3):
+    num = int(input("number?"))
     try:
-        print(100 / int(value))
-    except ValueError:
-        print("not integer")
-        break
+        print(1/num)
     except ZeroDivisionError:
-        print("not 0")
-        ＃　close this whole loop.
+        print("you are wrong.")
         break
-print("over")
+print("game over")
 
 
 '''judge inputted number is prime number or not?''' 
