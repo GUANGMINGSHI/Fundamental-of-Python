@@ -3,29 +3,7 @@ count = 5
 while count > 0:
     print(str(count))
     count -= 1
-    
-#数当てゲーム
-import random
-r = random.randrange(100)
-
-#iterate until draw your results. 
-while True:
-    x = int(input("number?"))
-    if x < r:
-        print("smaller")
-    elif x > r:
-        print("bigger")
-    else:
-        print("right")
-
-        
-'''break: break the loop'''
-while True:
-    value = int(input("yen"))
-    if value == 0:
-        print("0 is inputted.")
-        break;
-    print(100 / value)
+  
 
     
 '''continue: continue this loop when if statement occur.'''
@@ -35,10 +13,22 @@ while remain > 0:
     value = int(input("what?"))
     if value == 0:
         print("0 is inputted.")
+        # ループに戻る
         continue;
     print(100 /value)
     remain -= 1
-
+    
+    
+# continueで２重ループを抜ける
+for i in range(8):  # 10回ループする。iには0から9が順番に代入される
+    for j in range(8):  # 10回ループする。jには0から9が順番に代入される
+        if (i == 3 and j == 4):
+            break  # ifの条件が合えばbreakになり、内側のforループを抜ける
+    else:  # 内側のforのelse節は内側ループが全部まわり切ったら実行される、つまり前の行のbreakで抜けた場合ここは実行されない
+        continue  # 外側のforに対応するcontinue文、ここが実行されたら次の行のbreakには処理がいかず、外側のforの次のループにジャンプする
+    # break  # 外側のforを抜ける
+    print("(i,j)=({},{})".format(i, j))
+    
     
 
 '''
@@ -65,27 +55,3 @@ for i in range(3):
         print("you are wrong.")
         break
 print("game over")
-
-
-'''judge inputted number is prime number or not?''' 
-n = int(input("Data?"))
-for i in range(1, n + 1):
-    if n % i == 0:
-        if i != 1 and i != n:
-            print("bushisushu")
-            break;
-
-# 最大公約数を求める。ユークリッド互除法
-a = int(input("number a?"))
-b = int(input("number b?"))
-
-if a > b:
-    c = a
-    a = b
-    b = c
-while a != 0:
-    b = b % a
-    c = a
-    a = b
-    b = c
-print(b)
