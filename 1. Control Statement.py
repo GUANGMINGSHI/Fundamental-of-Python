@@ -47,11 +47,16 @@ for i in range(8):  # 10回ループする。iには0から9が順番に代入�
 '''
     
 # Example:    
-for i in range(3):
-    num = int(input("number?"))
-    try:
-        print(1/num)
-    except ZeroDivisionError:
-        print("you are wrong.")
+num = int(input("please input a number?"))
+
+for i in range(1, num+1):
+    if num % i == 0:
+        if (i != 1 and i != num):
+            print("this is not prime", num)
+            # breakつけないと、出力結果が多くなる。
+            break
+    else:
+        print("this is prime", num)
+        # 出力結果を一つにするため、ループを中断する。
         break
-print("game over")
+            # break
