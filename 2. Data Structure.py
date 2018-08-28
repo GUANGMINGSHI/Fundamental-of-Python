@@ -33,11 +33,13 @@ align = sorted(city)
 print(align)
 
 
-"""Tuple: a list cannot change element."Immutable": same as list"""
+"""Tuple: a list cannot change element."""
 # create tuple use "()" rather than "[]"
 grade_tuple = (10,20,30)
-# convert tuple to list.
+# リストと相互に交換できる。convert tuple to list.
 grade_list = list(grade_tuple)
+# grade_tuple[0] = 89 will be "TypeError: 'tuple' object does not support item assignment"
+# this is called immutable.
 
 
 """Set: a list have no same value"""
