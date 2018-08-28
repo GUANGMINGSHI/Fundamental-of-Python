@@ -1,9 +1,3 @@
-"""
-file operation take place three steps:
-1. open the file
-2. read or write the file
-3. close the file
-"""
 # 書き出しでファイルを開く, only "string"
 with open("/Users/jimmy/Desktop/Python/test.txt", "w") as file:
     file.write("information process")
@@ -14,13 +8,14 @@ topic_list = ["A", "B", "C", "D"]
 with open("/Users/jimmy/Desktop/Python/test.txt", "w") as file:
     file.write("information process")
     file.write("is")
+    # 以sequence style写入string
     file.writelines(topic_list)
 
 # Question1: show the csv file last one rows
 with open("/Users/jimmy/Desktop/Python/iris.csv") as file:
     for line in file:
         # conver string to list
-        line2 = line2.split(",")
+        line2 = line.split(",")
         print(line2[-1])
   
 # Question2: write in another file, rather than show it.
